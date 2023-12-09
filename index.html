@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 10px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        #container{
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+        #cont_img1{
+            color: white;
+            text-transform: uppercase;
+            font-family: 'Inter', sans-serif;
+        }
+        #cont_img1 , #cont_img2{
+            width: 50%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #cont_img2 img{
+            width: 50vw;
+            height: 100vh;
+            object-fit: fill;
+        }
+
+        #cont_img1{
+            background-color: #FF7D35;
+            padding: 2em;
+        }
+        #h_1 , #h_2{
+            display: flex;
+            height: 25vh;
+        }
+        #h_3{
+            display: flex;
+        }
+        h1,h2,h3,h4,h5{
+            font-size: 3.8em;
+        }
+        h2,h3,h4,h5{
+            width: 50%;
+        }
+        #cont_img2{
+            background-color: #1C69FF;
+        }   
+        @media screen and (max-width:1024px) {
+            #container{
+                flex-direction: column;
+                background-color: #1C69FF;
+            }
+            #cont_img1 , #cont_img2{
+                width: 100%;
+                height: 50vh;
+            }
+            #cont_img2 img{
+                width: 100%;
+                height: 50vh;
+            }
+            #h_1{
+                height: 15vh;
+            }
+            #h_2{
+                height: 8vh;
+            }
+            h1,h2,h3,h4,h5{
+            font-size: 3.4em;
+            }
+        }
+        @media screen and (max-width:428px) {
+            #container{
+                background-color: black;
+            }
+            #h_1{
+                height: 13vh;
+            }
+            #h_2{
+                height: 8vh;
+            }
+            h1,h2,h3,h4,h5{
+            font-size: 2.2em;
+            }
+        } 
+    </style>
+<body>
+    <div id="container">
+        <div id="cont_img1">
+           <div id="h_1">
+                <h1>flexible systems</h1>
+           </div>
+           <div id="h_2">
+                <h2>ml</h2>
+                <h3>tpn</h3>
+           </div>
+           <div id="h_3">
+                <h4>hh bcn</h4>
+                <h5>www.</br>flexible</br>visual</br>systems</br>.info</h5>
+           </div>
+        </div>
+        <div id="cont_img2">
+            <img src="img/Frame 166.svg" alt="">
+        </div>
+    </div>
+</body>
+</html>
